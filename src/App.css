@@ -1,0 +1,203 @@
+body {
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}  
+
+/* ----- nav bar ----- */
+
+header{
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(66, 66, 66);
+  width: 100%;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.header-img{
+  height: 35px;
+  margin: 10px;
+}
+
+header > h2 {
+  width: 400px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+nav{
+  width: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  float: right;
+}
+
+.menu-btn {
+  margin: 5px;
+  cursor: pointer;
+  height: 30px;
+  border: none;
+}
+
+.menu-btn:hover{
+  background: gray;
+}
+
+.btn-border{
+  border: black solid 1px;
+  margin-right: 20px;
+}
+
+.hamburger{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hamburger-open{
+  rotate: 90deg;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.burger{
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: grey;
+  transform-origin: 1px;
+  transition: all 0.3 linear;
+  display: none;
+}
+
+/* ----- section 1 ----- */
+.section1 {
+  height: 10rem;
+  background-image: url('https://media.istockphoto.com/id/1270800992/vector/seamless-pattern-with-tropical-animals-and-bird-in-jungle.jpg?s=612x612&w=0&k=20&c=7lFa4lDWHlMLLtHwt_ktLqDWdaTEZ2JfMgO6M14_1J4=');
+  background-repeat: repeat;
+  margin: auto;
+}
+
+.section1 > h1 {
+  margin-top: 0px;
+  padding-top: 30px;
+  padding-left: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section1 > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  height: 30px;
+  width: 50%;
+  border: none;
+}
+
+.search-btn {
+  height: 32px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  margin-left: 0px;
+  border: none;
+  width: 100px;
+}
+
+/* ----- section 2 ----- */
+.card-data{
+  display: flex;
+  flex-direction: row;
+  padding: 20px 5px;
+  background-color: rgb(219, 218, 218);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 700px){
+
+  /* ----- navigation bar ----- */
+  .burger{
+    display:block;
+    z-index: 10;
+    position: sticky;
+    margin-right: 15px;
+  }
+
+  .nav-btns-open{
+    display: block;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .nav-btns{
+    display: none;
+  }
+
+  .btn-border{
+    margin-right: 0px;
+  }
+
+  .menu-btn{
+    margin: 0px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  /* --- section 1 ---  */
+
+  .section1 {
+    height: 12rem;
+  }
+
+  .section1 > form{
+    flex-direction: column;
+  }
+
+  input{
+    width: 79%;
+  }
+
+  .search-btn{
+    margin-top: 10px;
+    width: 80%;
+  
+  }
+
+  /* --- section 2 --- */
+  .card-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+}
+
+@media (max-width: 369px){
+
+  .section1 {
+    height: 18rem;
+  }
+
+}
