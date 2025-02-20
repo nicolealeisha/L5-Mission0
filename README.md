@@ -1,8 +1,6 @@
-# React + Vite
+# Mission 0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The attached files are in support of Mission 0 for Mission Ready Level 5 ADV course. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Wireframes were provided, and a responsive website was developed following these requirements. 
+App.jsx contains the bulk of the code. 
