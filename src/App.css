@@ -127,6 +127,28 @@ input{
 }
 
 
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  height: 50px;
+}
+
+.footer-content > p{
+  color: white
+}
+
+.footer-content > p > a {
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
 
 @media (max-width: 700px){
 
